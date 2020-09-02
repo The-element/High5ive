@@ -529,8 +529,10 @@ div.gallery-col{
 
 /*front page*/
 .ram{
-    width: 100vw;
+    width: 110vw;
     max-height: 100vh;
+    margin-left: -90px;
+    margin-right: -10px;
 }
 
 .logo-holder {
