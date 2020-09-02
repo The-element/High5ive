@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_KNwtT6FlW4QvHI1GFNn60");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = sendFunction;
+    </script>
+	<title>Kontakta Oss</title>
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-md navbar-light" id="header">
+        <a href="index.html" class="navbar-brand" target="_self">
+				<img src="assets/images/logo.png" class="img-fluid logo-header" id="logo-header" alt="Webpage Logo - responsive image">
+            </a>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+		<div class="collapse navbar-collapse " id="collapsibleNavbar">
+			<ul class="navbar-nav nav-list ml-auto ">
+				<li class="nav-item nav-list-item">
+					<a class="nav-link" href="index.html"><b>Hem</b></a>
+				</li>
+				<li class="nav-item nav-list-item">
+					<a class="nav-link" href="referenser.html"><b>Referenser</b></a>
+				</li>
+				<li class="nav-item nav-list-item">
+					<a class="nav-link" href="om.html"><b>Om</b></a>
+				</li>
+				<li class="nav-item nav-list-item">
+					<a class="nav-link active" href="#"><b>Kontakt</b></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+    <div class="container contact-cont">
+        <div class="row">
+            <div class="col-md-4 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1755.124045664004!2d20.5602401163002!3d63.90245164329813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467c4f23fca81845%3A0x8c7a3da4b440d573!2sJullovsv%C3%A4gen%2031%2C%20918%2032%20S%C3%A4var!5e0!3m2!1ssv!2sse!4v1597174034034!5m2!1ssv!2sse" width="100%" height="460" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="col-md-6">
+                <form id="myform" method="post" class="contact-form">
+					<input type="hidden" name="contact_number">
+                    <input class="form-control" type="text" name="from_name" id="fullname" placeholder="Namn..." required/>
+                    <input class="form-control" type="text" name="from_email" id="emailaddress" placeholder="E-mail..." required/>
+                    <input class="form-control" type="text" name="phone" id="phone" placeholder="Tel...">
+                    <input class="form-control" type="text" name="subject" id="subject" placeholder="Ämne..." required>
+                    <textarea class="form-control" placeholder="Message" cols="30" rows="10" name="message" id="message" style="height: 190px;" required></textarea>
+                    <input id="submit" class="btn btn-primary" type="submit" value="Send" /><br /><br />
+                </form>
+            </div>
+            <div class="col-lg-2 cont-colm">
+                <b>Kontaktuppgifter:</b><br />
+                JL Montage, <br />
+                Jullovsvägen 31<br />
+                918 32 Sävar, Sverige<br />
+                Tel: +46 (0)70-000 00 00<br />
+                <a href="mailto:info@jlmontage.se">info@jlmontage.se</a><br />
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<h5>Snabblänkar</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Hem</a></li>
+						<li><a href="referenser.html"><i class="fa fa-angle-double-right"></i>Referenser</a></li>
+						<li><a href="om.html"><i class="fa fa-angle-double-right"></i>Om</a></li>
+						<li><a href="kontakt.html"><i class="fa fa-angle-double-right"></i>Kontakt</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<h5>Kontaktinformation</h5>
+                    <p>JL Montage<br>Jullovsvägen 31<br>918 32 Sävar<br><br><a href="mailto:info@jlmontage.se" target="_blank">info@jlmontage.se</a><br>+46 (0)70-000 00 00</p>
+				</div>
+			</div>
+            <div class="container" style="padding-bottom: 10px; border-bottom: 2px solid #ffffff;"></div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.facebook.com/jlmontageumea/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/jlmontage/?hl=sv" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="mailto:info@jlmontage.se" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>JL Montage är momsregistrerat och betalar skatt i Sverige.</p>
+					<p class="h6">© All Rights Reserved.<a class="text-green ml-2" href="https://www.jlmontage.com">JL Montage</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+
+	<!--Bootstrap CDN-->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
